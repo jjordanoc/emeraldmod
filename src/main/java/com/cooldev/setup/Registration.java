@@ -1,8 +1,8 @@
 package com.cooldev.setup;
 
 import com.cooldev.items.*;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.item.*;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fmllegacy.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
@@ -15,18 +15,22 @@ public class Registration {
     public static void init() {
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
-    public static final RegistryObject<Item> EMERALD_INGOT = ITEMS.register("emerald_ingot",
-            () -> new EmeraldIngot(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
     public static final RegistryObject<Item> EMERALD_PICKAXE = ITEMS.register("emerald_pickaxe",
-            () -> new EmeraldPickaxe(new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
+            () -> new PickaxeItem(NewTiers.EMERALD, 1, -2.8F, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
     public static final RegistryObject<Item> EMERALD_SHOVEL = ITEMS.register("emerald_shovel",
-            () -> new EmeraldShovel(new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
+            () -> new ShovelItem(NewTiers.EMERALD,1.5F, -3.0F, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
     public static final RegistryObject<Item> EMERALD_AXE = ITEMS.register("emerald_axe",
-            () -> new EmeraldAxe(new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
+            () -> new AxeItem(NewTiers.EMERALD, 5.0F, -3.0F, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
     public static final RegistryObject<Item> EMERALD_HOE = ITEMS.register("emerald_hoe",
-            () -> new EmeraldHoe(new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
+            () -> new HoeItem(NewTiers.EMERALD, -3, 0.0F, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
     public static final RegistryObject<Item> EMERALD_SWORD = ITEMS.register("emerald_sword",
-            () -> new EmeraldSword(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+            () -> new SwordItem(NewTiers.EMERALD, 3, -2.4F, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+    public static final RegistryObject<Item> EMERALD_HELMET = ITEMS.register("emerald_helmet",
+            () -> new ArmorItem(NewMaterials.EMERALD, EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
     public static final RegistryObject<Item> EMERALD_CHESTPLATE = ITEMS.register("emerald_chestplate",
-            () -> new EmeraldChestplate(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+            () -> new ArmorItem(NewMaterials.EMERALD, EquipmentSlot.CHEST, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+    public static final RegistryObject<Item> EMERALD_LEGGINGS = ITEMS.register("emerald_leggings",
+            () -> new ArmorItem(NewMaterials.EMERALD, EquipmentSlot.LEGS, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+    public static final RegistryObject<Item> EMERALD_BOOTS = ITEMS.register("emerald_boots",
+            () -> new ArmorItem(NewMaterials.EMERALD, EquipmentSlot.FEET, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
 }

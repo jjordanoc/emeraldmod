@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "emeraldmod:emerald_axe"
+      "emeraldmod:emerald_boots"
     ]
   },
   "criteria": {
@@ -21,7 +21,7 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "emeraldmod:emerald_axe"
+        "recipe": "emeraldmod:emerald_boots"
       }
     }
   },

@@ -12,16 +12,6 @@ import net.minecraft.world.item.crafting.Ingredient;
 import java.util.function.Supplier;
 
 public enum NewMaterials implements ArmorMaterial {
-    // DIAMOND("diamond", 33, new int[]{3, 6, 8, 3}, 10, SoundEvents.ARMOR_EQUIP_DIAMOND, 2.0F, 0.0F, () -> {
-    //      return Ingredient.of(Items.DIAMOND);
-    //   }),
-    //   TURTLE("turtle", 25, new int[]{2, 5, 6, 2}, 9, SoundEvents.ARMOR_EQUIP_TURTLE, 0.0F, 0.0F, () -> {
-    //      return Ingredient.of(Items.SCUTE);
-    //   }),
-    //   NETHERITE("netherite", 37, new int[]{3, 6, 8, 3}, 15, SoundEvents.ARMOR_EQUIP_NETHERITE, 3.0F, 0.1F, () -> {
-    //      return Ingredient.of(Items.NETHERITE_INGOT);
-    //   });
-
     EMERALD(EmeraldMod.MOD_ID + ":emerald", 35, new int[]{3, 6, 8, 3}, 13, SoundEvents.ARMOR_EQUIP_DIAMOND, 2.5F, 0.0F, () -> {
         return Ingredient.of(Items.EMERALD);
     });

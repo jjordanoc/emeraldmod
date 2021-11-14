@@ -5,5 +5,8 @@
   "item.emeraldmod.emerald_sword" : "Emerald Sword",
   "item.emeraldmod.emerald_shovel" : "Emerald Shovel",
   "item.emeraldmod.emerald_hoe" : "Emerald Hoe",
-  "item.emeraldmod.emerald_chestplate" : "Emerald Chestplate"
+  "item.emeraldmod.emerald_helmet" : "Emerald Helmet",
+  "item.emeraldmod.emerald_chestplate" : "Emerald Chestplate",
+  "item.emeraldmod.emerald_leggings" : "Emerald Leggings",
+  "item.emeraldmod.emerald_boots" : "Emerald Boots"
 }

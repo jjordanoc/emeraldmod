@@ -6,7 +6,7 @@
     ]
   },
   "criteria": {
-    "sticks": {
+    "emerald": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -27,7 +27,7 @@
   },
   "requirements": [
     [
-      "sticks",
+      "emerald",
       "has_the_recipe"
     ]
   ]

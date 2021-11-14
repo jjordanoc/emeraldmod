@@ -8,15 +8,6 @@ import net.minecraft.world.item.crafting.Ingredient;
 import java.util.function.Supplier;
 
 public enum NewTiers implements Tier {
-    /*
-    As reference
-    DIAMOND(3, 1561, 8.0F, 3.0F, 10, () -> {
-        return Ingredient.of(Items.DIAMOND);
-    }),
-    NETHERITE(4, 2031, 9.0F, 4.0F, 15, () -> {
-        return Ingredient.of(Items.NETHERITE_INGOT);
-    });*/
-
     EMERALD(3, 1796, 8.5F, 3.5F, 13, () -> {
         return Ingredient.of(Items.EMERALD);
     });
