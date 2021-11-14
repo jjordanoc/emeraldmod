@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "emeraldmod:emerald_shovel"
+    ]
+  },
+  "criteria": {
+    "sticks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:emerald"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "emeraldmod:emerald_shovel"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "sticks",
+      "has_the_recipe"
+    ]
+  ]
+}

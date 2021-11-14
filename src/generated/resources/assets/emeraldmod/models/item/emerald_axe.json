@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "emeraldmod:item/emerald_axe"
+  }
+}

@@ -10,6 +10,9 @@ public class DataGenerators {
     @SubscribeEvent
     public static void gatherData(GatherDataEvent event) {
         DataGenerator generator = event.getGenerator();
+        if (event.includeServer()) {
+            generator.addProvider(new Recipes(generator));
+        }
         if (event.includeClient()) {
             generator.addProvider(new Items(generator, event.getExistingFileHelper()));
         }

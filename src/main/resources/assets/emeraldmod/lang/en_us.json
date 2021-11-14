@@ -1,3 +1,9 @@
 {
-  "item.emeraldmod.emerald_ingot" : "Emerald Ingot"
+  "item.emeraldmod.emerald_ingot" : "Emerald Ingot",
+  "item.emeraldmod.emerald_pickaxe" : "Emerald Pickaxe",
+  "item.emeraldmod.emerald_axe" : "Emerald Axe",
+  "item.emeraldmod.emerald_sword" : "Emerald Sword",
+  "item.emeraldmod.emerald_shovel" : "Emerald Shovel",
+  "item.emeraldmod.emerald_hoe" : "Emerald Hoe",
+  "item.emeraldmod.emerald_chestplate" : "Emerald Chestplate"
 }
